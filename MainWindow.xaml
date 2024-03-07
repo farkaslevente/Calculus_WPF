@@ -1,0 +1,60 @@
+﻿<Window x:Class="WPFHely.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHely"
+        mc:Ignorable="d"
+        Title="Számológép" 
+        Height="600" 
+        Width="400" 
+        Background="Silver">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="TBResult"
+                 Grid.ColumnSpan="5" 
+                 HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" 
+                 Height="100" 
+                 Width="300" 
+                 FontSize="30" 
+                 Background="DarkSeaGreen"/>
+
+        <Button Background="Gray" Grid.Row="1" Grid.Column="0" Content="7" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button Background="Gray" Grid.Row="1" Grid.Column="1" Content="8" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button Background="Gray" Grid.Row="1" Grid.Column="2" Content="9" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button x:Name="BTNClear" Grid.Row="1" Grid.Column="3" Content="CE" FontSize="50" Margin="10" Click="BTNClear_Click" />
+
+
+        <Button Background="Gray" Grid.Row="2" Grid.Column="0" Content="4" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button Background="Gray" Grid.Row="2" Grid.Column="1" Content="5" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button Background="Gray" Grid.Row="2" Grid.Column="2" Content="6" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button x:Name="BTNMinus" Grid.Row="2" Grid.Column="3" Content="-" FontSize="50" Margin="10" Click="BTNMinus_Click"/>
+
+
+        <Button Background="Gray" Grid.Row="3" Grid.Column="0" Content="1" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button Background="Gray" Grid.Row="3" Grid.Column="1" Content="2" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button Background="Gray" Grid.Row="3" Grid.Column="2" Content="3" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button x:Name="BTNPlus" Grid.Row="3" Grid.Column="3" Content="+" FontSize="50" Margin="10" Click="BTNPlus_Click"/>
+
+
+        <Button Background="Orange" x:Name="BTNEquals" Grid.Row="4" Grid.Column="0" Content="=" FontSize="50" Margin="10" Click="BTNEquals_Click"/>
+        <Button Background="Gray" Grid.Row="4" Grid.Column="1" Content="0" FontSize="50" Margin="10" Click="Button_Click"/>
+        <Button x:Name="BTNDivide" Grid.Row="4" Grid.Column="2" Content="/" FontSize="50" Margin="10" Click="BTNDivide_Click"/>
+        <Button x:Name="BTNTimes"  Grid.Row="4" Grid.Column="3" Content="*" FontSize="50" Margin="10" Click="BTNTimes_Click"/>
+        
+    </Grid>
+</Window>
